@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3f3e3100-9142-4c2a-8bbb-4139aaf8e040",
+		"name": "bank-sy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-interests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/:id/interests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						":id",
+						"interests"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "c66c659d-8f6e-4378-b409-68dfe72f02a0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": -5000,\n    \"createdAt\": \"2023-01-05\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/:id/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						":id",
+						"transactions"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "c66c659d-8f6e-4378-b409-68dfe72f02a0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
