@@ -22,7 +22,7 @@
    - request body example 2 (without createdAt):
    ```json
    {
-      "amount": -5000
+      "amount": 10000
    }
    ```
 
@@ -81,3 +81,12 @@ Scenario 4
 12 * .02/365 * 5000 = $3.28
 - Total: 20.27
 ```
+
+
+## Arch
+
+DB Diagram
+![DB Diagram](./.docs/db-diagram.png?raw=true)
+
+CICD / DevOps
+![DevOps](./.docs/cicd.png)
