@@ -34,7 +34,7 @@ app
     getInterest
   )
   .post(
-    "/:id",
+    "/:id/transactions",
     validateRequest(
       Joi.object({
         amount: Joi.number().precision(2).required(),

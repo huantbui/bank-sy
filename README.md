@@ -1,11 +1,38 @@
 # Banksy
 
-Run:
+## Run:
+```
 - npm i
 - npm run local:db
 - npm run db:init
 - npm run db:seed
 - npm start
+```
+
+## API Routes
+- `GET /:id/interests`
+- `POST /:id/transactions`
+   - request body example 1: 
+   ```json
+   {
+      "amount": -5000,
+      "createdAt": "2023-01-27"
+   }
+   ```
+   - request body example 2 (without createdAt):
+   ```json
+   {
+      "amount": -5000
+   }
+   ```
+
+
+
+
+## Run API Routes
+- postman: `bank-sy.postman_collection.json`
+
+
 
 
 ## Cases
